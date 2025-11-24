@@ -227,9 +227,9 @@ export default function AdminRegisterPage() {
       {/* Register box */}
       <div className="register-box">
         <div className="logo0">
-          <img src="/imgs/logo-DME.png" alt="Logo0" />
+          <img src="/imgs/logo-DME2.png" alt="Logo0" />
         </div>
-        <h1>Daily Mind Education</h1>
+        <h1>Daily Mind Education</h1>
         <h2>Admin Registration</h2>
         <p>
           {step === 1 ? 'Create your admin account' : 
@@ -466,7 +466,7 @@ export default function AdminRegisterPage() {
         .dark-toggle { right: 20px; }
 
         .register-box {
-          max-width: 400px;
+          max-width: 500px;
           width: 100%;
           background-color: rgba(255, 255, 255, 0.05);
           padding: 30px;

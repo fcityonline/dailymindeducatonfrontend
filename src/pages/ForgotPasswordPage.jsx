@@ -182,13 +182,13 @@ export default function ForgotPasswordPage() {
 
   return (
     <>
-      <header className="header">
+      {/* <header className="header">
         <div className="logo">
           <img src="/imgs/logo-DME.png" alt="Logo" />
         </div>
         <DarkModeToggle />
         <h2>RESET PASSWORD</h2>
-      </header>
+      </header> */}
 
       <div className="auth-container">
         <div className="auth-box">

@@ -37,17 +37,22 @@ export default function LoginPage() {
 
   return (
     <>
-      <header className="header">
-        <div className="logo">
-          <img src="/imgs/logo-DME.png" alt="Logo" />
+      {/* <header className="header"> */}
+        {/* <div className="logo">
+        <img src="/imgs/logo-DME.png" alt="Logo" />
         </div>
-        <DarkModeToggle />
         <h2>LOGIN</h2>
-      </header>
+        {/* </header> */}
+
+        <button className="back-btn" onClick={() => nav("/")}>← Back</button>
+        <DarkModeToggle />
 
       <div className="auth-container">
         <div className="auth-box">
+                  <div className="logo3">
+          <img src="/imgs/logo-DME2.png" alt="Logo" />
           <h2>Daily Mind Education</h2>
+        </div>
           <p className="auth-subtitle">Sign in to your account</p>
           
           {error && (

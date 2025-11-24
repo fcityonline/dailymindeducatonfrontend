@@ -704,15 +704,15 @@ export default function WinnersPage() {
   {winner.rank === 2 && <span className="badge silver">SILVER</span>}
   {winner.rank === 3 && <span className="badge bronze">BRONZE</span>}
   </h3> */}
-  {winner.rank === 1 && <span className="crown">👑</span>}
 
+  {winner.rank === 1 && <span className="crown">👑</span>}
 <h3 className={winner.rank === 1 ? "shimmer" : ""} style={{ margin: 0, fontSize: '13px', position: 'relative' }}>
 
+  {winner.user.fullName || winner.user.username || 'Anonymous'}
   {winner.rank === 1 && <span className="badge gold">WINNER</span>}
   {winner.rank === 2 && <span className="badge silver">WINNER</span>}
   {winner.rank === 3 && <span className="badge bronze">WINNER</span>}
 
-  {winner.user.fullName || winner.user.username || 'Anonymous'}
 </h3>
 
                   </div>

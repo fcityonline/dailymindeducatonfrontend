@@ -9,7 +9,7 @@
 /* Body styles */
 body {
   background-color: #ffffff;
-  color: #000;
+  color: #000000;
   transition: background 0.4s ease, color 0.4s ease;
 }
 body.dark {
@@ -29,7 +29,6 @@ header h2 {
   font-size: 20px;
   margin-bottom: 0;
 }
-
 
 
 #searchBar2
@@ -1054,18 +1053,70 @@ body.dark .delete-btn:hover {
 
 
 
+.logo3 img {
+  height: 123px;      /* adjust size */
+  margin-bottom: -10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* centers the logo */
+}
+
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  background: rgba(255, 255, 255, 0.12);  /* transparent white */
+  color: white;
+
+  padding: 8px 15px;
+  font-size: 11px;
+  border: none;
+  border-radius: 20px;
+
+  cursor: pointer;
+  backdrop-filter: blur(4px);     /* subtle glass effect */
+  transition: 0.3s ease;
+  z-index: 1000;
+}
+
+/* Hover */
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+body.dark .back-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+}
+
+body.dark .back-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+
+
 
 
 
 
 /* Enhanced Auth Styles */
 .auth-container {
-  min-height: calc(100vh - 200px);
+  min-height: 100vh; 
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  margin-bottom: 100px;
+  /* margin-bottom: 45px; */
+  background-color: #3b060e;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+  
 }
 
 .auth-box {
@@ -1073,11 +1124,12 @@ body.dark .delete-btn:hover {
   width: 100%;
   margin: 0 auto;
   padding: 40px 30px;
-  background: rgba(255, 255, 255, 0.95);
+  /* background: rgba(255, 9, 9, 0.95); */
+  /* background-color: rgba(255, 255, 255, 0.05); */
   border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 2px solid #e0e0e0;
-  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* border: 1px solid #000000; */
+  transition: all 0.3s ease;background: linear-gradient(to bottom, #3b060e, #200307, #000000);
 }
 
 body.dark .auth-box {
@@ -1093,14 +1145,14 @@ body.dark .auth-box h2 {
 .auth-box h2 {
   text-align: center;
   margin-bottom: 10px;
-  color: #b30000;
+  color: #ffffff;
   font-size: 28px;
   font-weight: bold;
 }
 
 .auth-subtitle {
   text-align: center;
-  color: #666;
+  color: #808080;
   margin-bottom: 30px;
   font-size: 16px;
 }
@@ -1117,7 +1169,7 @@ body.dark .auth-subtitle {
   display: block;
   margin-bottom: 8px;
   font-weight: 600;
-  color: #333;
+  color: #808080;
   font-size: 14px;
 }
 
@@ -1137,7 +1189,7 @@ body.dark .input-group label {
 
 .input-group input:focus {
   outline: none;
-  border-color: #b30000;
+  border-color: #ff5555;
   box-shadow: 0 0 0 3px rgba(179, 0, 0, 0.1);
 }
 
@@ -1167,7 +1219,7 @@ body.dark .input-hint {
 .auth-button {
   width: 100%;
   padding: 14px;
-  background: linear-gradient(135deg, #b30000, #d40000);
+  background: linear-gradient(135deg, #8b0000, #8b0000);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -1237,7 +1289,7 @@ body.dark .auth-footer p {
 }
 
 .auth-footer a {
-  color: #b30000;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
@@ -3966,10 +4018,11 @@ body.dark .delete-progress .progress-text { color: #eee; }
   .auth-box {
     padding: 20px 15px;
     margin: 10px;
+    margin-top: 50px;
   }
   
   .auth-box h2 {
-    font-size: 20px;
+    font-size: 28px;
   }
   
   .input-group {

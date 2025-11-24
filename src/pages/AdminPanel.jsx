@@ -412,13 +412,16 @@ Which planet is known as the Morning Star?,Venus,Mercury,Mars,Jupiter,1,1`;
 
       {/* Sidebar */}
       <nav className={`sidebar ${sidebarActive ? 'active' : ''}`} id="sidebar">
-        <div className="logo">
+        <div className="logo3">
+      <img src="/imgs/logo-DME2.png" alt="Logo3" />
+      </div>
+        {/* <div className="logo">
           <img src="/imgs/logoo-DME.png" alt="Logo" onError={(e) => {
             e.target.style.display = 'none';
             e.target.nextSibling.textContent = 'DME Admin';
-          }} />
-          <span style={{ display: 'none' }}>DME Admin</span>
-        </div>
+            }} />
+            <span style={{ display: 'none' }}>DME Admin</span>
+            </div> */}
         <ul id="menuList">
           <li className={currentView === 'dashboard' ? 'active' : ''} onClick={() => handleViewChange('dashboard')}>
             <button type="button" className="nav-link">Dashboard</button>

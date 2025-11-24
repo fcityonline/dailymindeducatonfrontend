@@ -270,13 +270,13 @@ export default function RegisterPage() {
 
   return (
     <>
-      <header className="header">
+      {/* <header className="header">
         <div className="logo">
           <img src="/imgs/logo-DME.png" alt="Logo" />
         </div>
         <DarkModeToggle />
         <h2>REGISTER</h2>
-      </header>
+      </header> */}
 
       <div className="auth-container">
         <div className="auth-box">
